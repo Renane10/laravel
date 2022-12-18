@@ -7,5 +7,7 @@ RUN docker-php-ext-enable mcrypt
 WORKDIR /var/www/laravel
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
-
-
+RUN composer install
+RUN php artisan cache:clear
+RUN composer dump-autoload
+RUN php artisan key:generate
