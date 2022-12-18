@@ -14,16 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $nome = 'Robocsomonoclayton';
-    $idade = 24;
-    return view('welcome',['nome' => $nome,'idade' => $idade]);
+    return view('welcome');
 });
 
-Route::get('/contato', function () {
-    return view('contact');
+Route::get('/user', function () {
+    return view('usuarios');
 });
 
-
-Route::get('/produtos', function () {
-    return view('products');
+Route::get('/teste', function () {
+    return view('teste');
 });
