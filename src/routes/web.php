@@ -17,10 +17,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/user', function () {
+Route::get('/usuarios', function () {
     return view('usuarios');
 });
 
-Route::get('/teste', function () {
-    return view('teste');
+Route::get('/produto/{id?}', function ($id = null) {
+    return view('product',['id'=> $id]);
+});
+
+Route::get('/produtos', function () {
+    $busca = request('search');
+    return view('products',['busca'=>$busca]);
 });
