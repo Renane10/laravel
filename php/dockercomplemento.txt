@@ -1,0 +1,4 @@
+RUN composer install
+RUN php artisan cache:clear
+RUN composer dump-autoload
+RUN php artisan key:generate
