@@ -21,3 +21,12 @@ services:
         - ./apache/default.conf:/etc/apache2/sites-enabled/000-default.conf
       depends_on:
         - database
+  
+  app:
+    image: phpmyadmin/phpmyadmin:latest
+    links:
+      - db
+    ports:
+      - 81:81
+    environment:
+      - PMA_ARBITRARY=1

@@ -27,7 +27,7 @@
                             <a class="nav-link" href="#">Eventos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Criar Eventos</a>
+                            <a class="nav-link" href="/events/create">Criar Eventos</a>
                         </li>
                     </ul>
                 </div>
@@ -38,5 +38,7 @@
     <footer>
         <p>Rtech MKT &copy; 2020</p>
     </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
